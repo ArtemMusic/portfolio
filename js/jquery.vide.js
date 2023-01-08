@@ -499,3 +499,278 @@
   });
 
 });
+
+// var arrLang = {
+//   'en': {
+//     'about': 'About',
+//     'goods': 'Goods',
+//     'benefits': 'Benefits',
+//     'contact': 'Contact US',
+//   },
+//   'ru': {
+//     'about': 'О нас',
+//     'goods': 'Продукция',
+//     'benefits': 'Преимущества',
+//     'contact': 'Контакты',
+//   }
+// }
+
+//   $(function() {
+//     $('.translate').click(function() {
+//       var lang = $(this).attr('id');
+
+//       $('.lang').each(function(index, item) {
+//         $(this).text(arrLang[lang][$(this).attr('key')]);
+//       });
+//     });
+//   });
+
+const langArr = {
+  "menu" :  {
+    "ru": "Меню",
+    "en": "Menu",
+  }, 
+  "home" : {
+    "ru": "Главная",
+    "en": "Home",
+  },
+  "about" :  {
+    "ru": "Обо мне",
+    "en": "About",
+  },
+  "skils" :  {
+    "ru": "Навыки",
+    "en": "Skils",
+  },
+  "serv" :  {
+    "ru": "Сферы",
+    "en": "Services",
+  },
+  "portfolio" :  {
+    "ru": "Портфолио",
+    "en": "Portfolio",
+  },
+  "contact" :  {
+    "ru": "Связь",
+    "en": "Contact",
+  },
+  "title" :  {
+    "ru": "Привет я Артём Музычук",
+    "en": "Hello i'm Artem Muzychuk",
+  },
+  "subtitle" :  {
+    "ru": '"Специализируюсь в WEB-разработке и программной инженерии. <br> Студент Санкт-Петербургского государственного университета имени Бонч-Бруевича"',
+    "en": '"I specialize in WEB development and software engineering. <br> Student of the Bonch-Bruevich St.Petersburg State University"',
+  },
+  "wd" :  {
+    "ru": "Web разработчик",
+    "en": "Web Developer",
+  },
+  "se" :  {
+    "ru": "Программный инженер",
+    "en": "Software Engineer",
+  },
+  "cicd" :  {
+    "ru": "CI/CD инженер",
+    "en": "CI/CD Engineer",
+  },
+  "artem" :  {
+    "ru": "Обо мне",
+    "en": "About Artem",
+  },
+  "artemtext" :  {
+    "ru": "Разработал сайты с использованием современных технологий. Улучшил процесс работы в команде, внедрив современный фреймворк и паттерны проектирования/разработки. <a href='https://github.com/ArtemMusic' target='_blank'>GitHub</a>",
+    "en": "Developed websites using modern technologies. Improved the teamwork process in the team by introducing a modern framework and design/development patterns. <a href='https://github.com/ArtemMusic' target='_blank'>GitHub</a>",
+  },
+  "artemtext2" :  {
+    "ru": "— Реализовал успешные идеи разработки: паттерны, программная инженерия, Github для слияния разных частей приложения.",
+    "en": "— Implemented successful development ideas: apply patterns, software engineering, Git Hub to merge different parts of the application.",
+  },
+  "artemtext3" :  {
+    "ru": "- Применил и внедрил инструменты ci/cd для оптимизации развертывания высоконагруженной системы.",
+    "en": "- Applied and implemented ci/cd tools to optimize the deployment of a high-load system.",
+  },
+  "artemtext4" :  {
+    "ru": "— Разработали систему умного дома с телеграм-ботом.",
+    "en": "— Developed a smart home system with a telegram bot.",
+  },
+  "artemtext5" :  {
+    "ru": "- Написал собственную базу данных на С++.",
+    "en": "- Wrote my own database in С++.",
+  },
+  "artemtext6" :  {
+    "ru": "- Проанализировал и оптимизировал более 20,000 строчек кода.",
+    "en": "- Analyzed and optimized more than 20,000 lines of code.",
+  },
+  "cv" :  {
+    "ru": "Скачать резюме (en & ru)",
+    "en": "Download CV (en & ru)",
+  },
+  "mainskilstext" :  {
+    "ru": "Моё основное направление BackEnd. Но спектр навыков намного шире.",
+    "en": "My main direction is BackEnd. But range of skills is much wider.",
+  },
+  "mainskils" :  {
+    "ru": "Навыки",
+    "en": "Skils",
+  },
+  "mainservtext" :  {
+    "ru": "Все эти задачи я могу выполнять на одинаково достойном уровне.",
+    "en": "I can perform all these tasks at the same equally worthy level.",
+  },
+  "mainserv" :  {
+    "ru": "Сферы деятельности",
+    "en": "Services",
+  },
+  "servwd" :  {
+    "ru": "Web разработка",
+    "en": "Web Development",
+  },
+  "servwdtext" :  {
+    "ru": "Разработка происходит в BackEnd: PHP, Laravel, C++ и FrontEnd: VuesJs, HTML5, CSS3. Этот набор является самым популярным и позволяет быстро и эффективно строить сложные и масштабные системы. Для оптимизации использовался C++.",
+    "en": "Development takes place in the BackEnd: PHP, Laravel, C++ and FrontEnd: VuesJs, HTML5, CSS3. This set is the most popular and allows you to quickly and efficiently build complex and large-scale systems. Also, in addition to the above tools, C++ will be used to optimize.",
+  },
+  "servse" :  {
+    "ru": "Программная инженерия",
+    "en": "Software engineering",
+  },
+  "servsetext" :  {
+    "ru": "Программная инженерия — это набор технологий, который позволяет строить максимально надежные и эффективные системы, отслеживать жизненный цикл продукта от его идеи до реализации. Математические методы построения систем позволят оценить проделанную работу.",
+    "en": "Software engineering is a set of technologies that allows you to build the most reliable and efficient systems, monitor the life cycle of a product from its idea to implementation. Mathematical methods for building systems will allow you to evaluate the work done",
+  },
+  "servcicd" :  {
+    "ru": "CI/CD",
+    "en": "CI/CD",
+  },
+  "servcicdtext" :  {
+    "ru": "Это сочетание непрерывной интеграции и непрерывного развертывания программного обеспечения во время разработки с помощью Docker. CI/CD объединяет разработку, тестирование и развертывание приложения. Это позволяет вносить любые изменения без остановки работы.",
+    "en": "It is a combination of continuous integration and continuous software deployment during development with docker. CI/CD integrates the development, testing and deployment of an application. This allows to make any changes without stopping work.",
+  },
+  "servidea" :  {
+    "ru": "Web креативность",
+    "en": "Web Idea",
+  },
+  "servideatext" :  {
+    "ru": "Креативность и внимание к деталям – залог успеха в разработке современных систем. При построении архитектуры я стараюсь внедрять новые и интересные решения, чтобы добиться наилучшего результата как FrontEnd, так и BackEnd. Не стоит бояться пробовать что-то новое.",
+    "en": "Creativity and attention to detail is the key to success in the development of modern systems. When building architecture, I try to implement new and interesting solutions in order to achieve the best result both FrontEnd and BackEnd.",
+  }, 
+  "servsp" :  {
+    "ru": "Поддержка",
+    "en": "Support",
+  },
+  "servsptext" :  {
+    "ru": "В работе очень важно и нужно уметь поддерживать контакт с коллективом, заказчиком и руководителем, находить общий язык и быть дружелюбным. Я очень общительный человек, который может помочь решить проблему и прийти к лучшему результату, даже если это очень сложно.",
+    "en": "In work, it is very important and necessary to be able to maintain contact with the team, customer and manager, find a common language and be friendly. I am a very sociable person who can help solve the problem and come to the best result, even if it is very difficult.",
+  },
+  "serviot" :  {
+    "ru": "IoT",
+    "en": "IoT",
+  },
+  "serviottext" :  {
+    "ru": "Помимо разработки веб-сайтов, я также принимал участие в разработке систем умного дома, искусственного интеллекта и телеграм-ботов. Для этого я собрал собственную команду. Это дало мне невероятное количество новых знаний, опыта работы в команде и технических навыков.",
+    "en": "In addition to developing websites, I also took part in the design of smart home systems, artificial intelligence, and telegram bots. To do this, I assembled my own team. It gave me an incredible amount of new knowledge, teamwork experience and technical skills.",
+  },
+  "port" :  {
+    "ru": "Портфолио",
+    "en": "Portfolio",
+  },
+  "porttext" :  {
+    "ru": "Оцените мою работу и оставьте отзыв. Вы также можете предложить свои идеи по их развитию.",
+    "en": "Check out my work and give feedback. You can also offer your ideas for their development.",
+  },
+  "endcontact" :  {
+    "ru": "Связь",
+    "en": "Contact",
+  },
+  "endcontacttext" :  {
+    "ru": "Свяжитесь со мной, буду рад новым предложениям и знакомствам.",
+    "en": "Contact me, I will be glad to new offers and acquaintances.",
+  },
+  "lang" :  {
+    "ru": "Ru",
+    "en": "En",
+  },
+
+}
+
+const maxImg = document.querySelector('.right-panel img');
+const select = document.querySelector('select');
+const allLang = ['en', 'ru'];
+
+document.querySelectorAll('.left-panel img').forEach(item => item.onmouseenter = (event) => maxImg.src = event.target.src);
+
+select.addEventListener('change', changeURLLanguage);
+
+// перенаправить на url с указанием языка
+function changeURLLanguage() {
+    let lang = select.value;
+    location.href = window.location.pathname + '#' + lang;
+    location.reload();
+}
+
+function changeLanguage() {
+    let hash = window.location.hash;
+    hash = hash.substr(1);
+    console.log(hash);
+    if (!allLang.includes(hash)) {
+        location.href = window.location.pathname + '#en';
+        location.reload();
+    }
+    select.value = hash;
+    document.querySelector('.lng-menu').innerHTML = langArr['menu'][hash];
+    document.querySelector('.lng-home').innerHTML = langArr['home'][hash];
+    document.querySelector('.lng-about').innerHTML = langArr['about'][hash];
+    document.querySelector('.lng-skils').innerHTML = langArr['skils'][hash];
+    document.querySelector('.lng-serv').innerHTML = langArr['serv'][hash];
+    document.querySelector('.lng-portfolio').innerHTML = langArr['portfolio'][hash];
+    document.querySelector('.lng-contact').innerHTML = langArr['contact'][hash];
+    document.querySelector('.lng-title').innerHTML = langArr['title'][hash];
+    document.querySelector('.lng-subtitle').innerHTML = langArr['subtitle'][hash];
+    document.querySelector('.lng-wd').innerHTML = langArr['wd'][hash];
+    document.querySelector('.lng-se').innerHTML = langArr['se'][hash];
+    document.querySelector('.lng-cicd').innerHTML = langArr['cicd'][hash];
+    document.querySelector('.lng-artem').innerHTML = langArr['artem'][hash];
+    document.querySelector('.lng-artemtext').innerHTML = langArr['artemtext'][hash];
+    document.querySelector('.lng-cv').innerHTML = langArr['cv'][hash];
+    document.querySelector('.lng-artemtext2').innerHTML = langArr['artemtext2'][hash];
+    document.querySelector('.lng-artemtext3').innerHTML = langArr['artemtext3'][hash];
+    document.querySelector('.lng-artemtext4').innerHTML = langArr['artemtext4'][hash];
+    document.querySelector('.lng-artemtext5').innerHTML = langArr['artemtext5'][hash];
+    document.querySelector('.lng-artemtext6').innerHTML = langArr['artemtext6'][hash];
+    document.querySelector('.lng-mainskilstext').innerHTML = langArr['mainskilstext'][hash];
+    document.querySelector('.lng-mainskils').innerHTML = langArr['mainskils'][hash];
+    document.querySelector('.lng-mainservtext').innerHTML = langArr['mainservtext'][hash];
+    document.querySelector('.lng-mainserv').innerHTML = langArr['mainserv'][hash];
+    document.querySelector('.lng-servwd').innerHTML = langArr['servwd'][hash];
+    document.querySelector('.lng-servwdtext').innerHTML = langArr['servwdtext'][hash];
+    document.querySelector('.lng-servse').innerHTML = langArr['servse'][hash];
+    document.querySelector('.lng-servsetext').innerHTML = langArr['servsetext'][hash];
+    document.querySelector('.lng-servcicd').innerHTML = langArr['servcicd'][hash];
+    document.querySelector('.lng-servcicdtext').innerHTML = langArr['servcicdtext'][hash];
+    document.querySelector('.lng-servidea').innerHTML = langArr['servidea'][hash];
+    document.querySelector('.lng-servideatext').innerHTML = langArr['servideatext'][hash];
+    document.querySelector('.lng-servsp').innerHTML = langArr['servsp'][hash];
+    document.querySelector('.lng-servsptext').innerHTML = langArr['servsptext'][hash];
+    document.querySelector('.lng-serviot').innerHTML = langArr['serviot'][hash];
+    document.querySelector('.lng-serviottext').innerHTML = langArr['serviottext'][hash];
+    document.querySelector('.lng-port').innerHTML = langArr['port'][hash];
+    document.querySelector('.lng-porttext').innerHTML = langArr['porttext'][hash];
+    document.querySelector('.lng-contact').innerHTML = langArr['contact'][hash];
+    document.querySelector('.lng-about').innerHTML = langArr['about'][hash];
+    document.querySelector('.lng-contact').innerHTML = langArr['contact'][hash];
+    document.querySelector('.lng-about').innerHTML = langArr['about'][hash];
+    document.querySelector('.lng-contact').innerHTML = langArr['contact'][hash];
+    document.querySelector('.lng-about').innerHTML = langArr['about'][hash];
+    document.querySelector('.lng-contact').innerHTML = langArr['contact'][hash];
+    document.querySelector('.lng-lang').innerHTML = langArr['lang'][hash];
+
+    for (let key in langArr) {
+        let elem = document.querySelector('.lng-' + key);
+        if (elem) {
+            elem.innerHTML = langArr[key][hash];
+        }
+
+    }
+}
+
+changeLanguage();
