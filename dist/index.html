@@ -35,7 +35,7 @@
 
 </head>
 
-<body id="page-top" class="politics_version" ">
+<body id="page-top" class="politics_version">
 
     <!-- LOADER -->
     <div id="preloader">
@@ -51,7 +51,17 @@
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <img class="img-fluid" src="images/logo.png" alt="" />
             </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            <div class="input-group select" style="width: auto !important; margin-right: 10px;">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary dropdown-toggle lng-lang" type="button"
+                        data-toggle="dropdown" aria-expanded="false">En</button>
+                    <select class="dropdown-menu" name="" id="">
+                        <option value="ru" class="dropdown-item">Русский</option>
+                        <option value="en" class="dropdown-item">English</option>
+                    </select>
+                </div>
+            </div>
+            <button class="navbar-toggler navbar-toggler-right lng-menu" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
                 Menu
@@ -60,25 +70,25 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+                        <a class="nav-link js-scroll-trigger active lng-home" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        <a class="nav-link js-scroll-trigger lng-about" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#blog">Skils</a>
+                        <a class="nav-link js-scroll-trigger lng-skils" href="#blog">Skils</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                        <a class="nav-link js-scroll-trigger lng-serv" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                        <a class="nav-link js-scroll-trigger lng-portfolio" href="#portfolio">Portfolio</a>
                     </li>
                     <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
             </li> -->
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        <a class="nav-link js-scroll-trigger lng-contact" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -88,16 +98,16 @@
     <section id="home" class="main-banner parallaxie"
         style="background: url('uploads/a.gif'); background-color: white;">
         <div class="heading">
-            <h1>hello i'm Artem Muzychuk</h1>
-            <p>"I specialize in WEB development and software engineering.<br>Student of the Bonch-Bruevich St.
-                Petersburg State University"</p>
+            <h1 class="lng-title">Hello i'm Artem Muzychuk</h1>
+            <p class="lng-subtitle">"I specialize in WEB development and software engineering.
+                <br>Student of the Bonch-Bruevich St.
+                Petersburg State University"
+            </p>
             <h3 class="cd-headline clip is-full-width">
-                <span>A person who is a </span>
                 <span class="cd-words-wrapper">
-                    <b class="is-visible">Web Developer</b>
-                    <b>Software Engeener</b>
-                    <b>CI/CD </b>
-
+                    <b class="is-visible lng-wd">Web Developer</b>
+                    <b class="lng-se">Software Engeener</b>
+                    <b class="lng-cicd">CI/CD Engeener</b>
                 </span>
             </h3>
         </div>
@@ -134,16 +144,20 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">
-                        <h2>About Artem</h2>
-                        <p> Developed websites using modern technologies. Improved the development process in the team
-                            by introducing a modern framework and design/development patterns. <a href="https://github.com/ArtemMusic" target="_blank">GitHub</a></p>
-                        <p> — Implemented successful development ideas: apply patterns, software
+                        <h2 class="lng-artem">About Artem</h2>
+                        <p class="lng-artemtext">Developed websites using modern technologies. Improved the teamwork
+                            process in the team
+                            by introducing a modern framework and design/development patterns. <a
+                                href="https://github.com/ArtemMusic" target="_blank">GitHub</a></p>
+                        <p class="lng-artemtext2"> — Implemented successful development ideas: apply patterns, software
                             engineering, Git Hub to merge different parts of the application.</p>
-                        <p>- Applied and implemented ci/cd tools to optimize the deployment of a high-load system.</p>
-                        <p>— Developed a smart home system with a telegram bot.</p>
-                        <p>- Wrote my own database in С++.</p>
-                        <p>- Analyzed and optimized more than 30,000 lines of code.</p>
-                        <a href="uploads/1.pdf" class="sim-btn btn-hover-new" data-text="Download CV" download target="_blank"><span>Download CV</span></a>
+                        <p class="lng-artemtext3">- Applied and implemented ci/cd tools to optimize the deployment of a
+                            high-load system.</p>
+                        <p class="lng-artemtext4">— Developed a smart home system with a telegram bot.</p>
+                        <p class="lng-artemtext5">- Wrote my own database in С++.</p>
+                        <p class="lng-artemtext6">- Analyzed and optimized more than 20,000 lines of code.</p>
+                        <a href="uploads/1.pdf" class="sim-btn btn-hover-new lng-cv" download
+                            target="_blank"><span>Download CV</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -159,8 +173,8 @@
     <div id="blog" class="section lb">
         <div class="container">
             <div class="section-title text-left px-3">
-                <h3>Skils</h3>
-                <p>
+                <h3 class="lng-mainskils">Skils</h3>
+                <p class="lng-mainskilstext">
                     My main direction is BackEnd. But range of skills is much wider.
                 </p>
             </div><!-- end title -->
@@ -258,8 +272,8 @@
             <div id="services" class="section lb">
                 <div class="container">
                     <div class="section-title text-left">
-                        <h3>Services</h3>
-                        <p>I can perform all these tasks at the same equally worthy level.</p>
+                        <h3 class="lng-mainserv">Services</h3>
+                        <p class="lng-mainservtext">I can perform all these tasks at the same equally worthy level.</p>
                     </div><!-- end title -->
 
                     <div class="row">
@@ -268,8 +282,12 @@
                                 <div class="ser-icon">
                                     <i class="flaticon-seo"></i>
                                 </div>
-                                <h2>Web Development</h2>
-                                <p>Development takes place in the BackEnd: PHP, Laravel, C++ and FrontEnd: VuesJs, HTML5, CSS3. This set is the most popular and allows you to quickly and efficiently build complex and large-scale systems. Also, in addition to the above tools, C++ will be used to optimize.</p>
+                                <h2 class="lng-servwd">Web Development</h2>
+                                <p class="lng-servwdtext">Development takes place in the BackEnd: PHP, Laravel, C++ and
+                                    FrontEnd: VuesJs,
+                                    HTML5, CSS3. This set is the most popular and allows you to quickly and efficiently
+                                    build complex and large-scale systems. Also, in addition to the above tools, C++
+                                    will be used to optimize.</p>
                             </div>
                         </div><!-- end col -->
                         <div class="col-md-4">
@@ -277,8 +295,12 @@
                                 <div class="ser-icon">
                                     <i class="flaticon-development"></i>
                                 </div>
-                                <h2>Software engineering</h2>
-                                <p>Software engineering is a set of technologies that allows you to build the most reliable and efficient systems, monitor the life cycle of a product from its idea to implementation. Mathematical methods for building systems will allow you to evaluate the work done</p>
+                                <h2 class="lng-servse">Software engineering</h2>
+                                <p class="lng-servsetext">Software engineering is a set of technologies that allows you
+                                    to build the most
+                                    reliable and efficient systems, monitor the life cycle of a product from its idea to
+                                    implementation. Mathematical methods for building systems will allow you to evaluate
+                                    the work done.</p>
                             </div>
                         </div><!-- end col -->
                         <div class="col-md-4">
@@ -286,8 +308,12 @@
                                 <div class="ser-icon">
                                     <i class="flaticon-process"></i>
                                 </div>
-                                <h2>CI/CD</h2>
-                                <p>It is a combination of continuous integration and continuous software deployment during development with docker. CI/CD integrates the development, testing and deployment of an application. This allows to make any changes without stopping work.</p>
+                                <h2 class="lng-servcicd">CI/CD</h2>
+                                <p class="lng-servcicdtext">It is a combination of continuous integration and continuous
+                                    software deployment
+                                    during development with docker. CI/CD integrates the development, testing and
+                                    deployment of an application. This allows to make any changes without stopping work.
+                                </p>
                             </div>
                         </div><!-- end col -->
                         <div class="col-md-4">
@@ -295,8 +321,11 @@
                                 <div class="ser-icon">
                                     <i class="flaticon-idea"></i>
                                 </div>
-                                <h2>Web Idea</h2>
-                                <p>Creativity and attention to detail is the key to success in the development of modern systems. When building architecture, I try to implement new and interesting solutions in order to achieve the best result both FrontEnd and BackEnd.</p>
+                                <h2 class="lng-servidea">Web Idea</h2>
+                                <p class="lng-servideatext">Creativity and attention to detail is the key to success in
+                                    the development of modern
+                                    systems. When building architecture, I try to implement new and interesting
+                                    solutions in order to achieve the best result both FrontEnd and BackEnd.</p>
                             </div>
                         </div><!-- end col -->
                         <div class="col-md-4">
@@ -304,9 +333,12 @@
                                 <div class="ser-icon">
                                     <i class="flaticon-discuss-issue"></i>
                                 </div>
-                                <h2>Support</h2>
-                                <p>
-                                    In work, it is very important and necessary to be able to maintain contact with the team, customer and manager, find a common language and be friendly. I am a very sociable person who can help solve the problem and come to the best result, even if it is very difficult.</p>
+                                <h2 class="lng-servsp">Support</h2>
+                                <p class="lng-servsptext">
+                                    In work, it is very important and necessary to be able to maintain contact with the
+                                    team, customer and manager, find a common language and be friendly. I am a very
+                                    sociable person who can help solve the problem and come to the best result, even if
+                                    it is very difficult.</p>
                             </div>
                         </div><!-- end col -->
                         <div class="col-md-4">
@@ -314,8 +346,12 @@
                                 <div class="ser-icon">
                                     <i class="flaticon-idea-1"></i>
                                 </div>
-                                <h2>IoT</h2>
-                                <p>In addition to developing websites, I also took part in the design of smart home systems, artificial intelligence, and telegram bots. To do this, I assembled my own team. It gave me an incredible amount of new knowledge, teamwork experience and technical skills.</p>
+                                <h2 class="lng-serviot">IoT</h2>
+                                <p class="lng-serviottext">In addition to developing websites, I also took part in the
+                                    design of smart home
+                                    systems, artificial intelligence, and telegram bots. To do this, I assembled my own
+                                    team. It gave me an incredible amount of new knowledge, teamwork experience and
+                                    technical skills.</p>
                             </div>
                         </div><!-- end col -->
                     </div><!-- end row -->
@@ -324,11 +360,12 @@
             <div id="portfolio" class="section lb">
                 <div class="container">
                     <div class="section-title text-left">
-                        <h3>Portfolio(в процессе)</h3>
-                        <p>Check out my work and give feedback. You can also offer your ideas for their development.</p>
+                        <h3 class="lng-port">Portfolio</h3>
+                        <p class="lng-porttext">Check out my work and give feedback. You can also offer your ideas for
+                            their development.</p>
                     </div><!-- end title -->
 
-                    <div class="gallery-menu row">
+                    <!-- <div class="gallery-menu row">
                         <div class="col-md-12">
                             <div class="button-group filter-button-group text-left">
                                 <button class="active" data-filter="*">All</button>
@@ -337,9 +374,9 @@
                                 <button data-filter=".gal_c">Graphic Design</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="gallery-list row">
+                    <!-- <div class="gallery-list row">
                         <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
                             <div class="gallery-single fix">
                                 <img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
@@ -398,100 +435,98 @@
                                         class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div> -->
                 </div>
             </div>
         </div>
-        <div id="contact" class="section db" style="background-color: #1f1f1f;">
-            <div class="container">
-                <div class="section-title text-left">
-                    <h3>Contact(в процессе)</h3>
-                    <p>Contact me, I will be glad to new offers and acquaintances.</p>
-                </div><!-- end title -->
+    </div>
+    <div id="contact" class="section db" style="background-color: #1f1f1f;">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3 class="lng-endcontact">Contact</h3>
+                <p class="lng-endcontacttext">Contact me, I will be glad to new offers and acquaintances.</p>
+            </div><!-- end title -->
 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="contact_form">
-                            <div id="message"></div>
-                            <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input class="form-control" id="name" type="text" placeholder="Your Name"
-                                                required="required"
-                                                data-validation-required-message="Please enter your name.">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" id="email" type="email"
-                                                placeholder="Your Email (optional)" required="required"
-                                                data-validation-required-message="Please enter your email address.">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" id="phone" type="tel"
-                                                placeholder="Your Phone (optional)" required="required"
-                                                data-validation-required-message="Please enter your phone number.">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-control" id="name" type="text" placeholder="Your Name"
+                                            required="required"
+                                            data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="message" placeholder="Your Message"
-                                                required="required"
-                                                data-validation-required-message="Please enter a message."></textarea>
-                                            <p class="help-block text-danger"></p>
-                                        </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="email" type="email"
+                                            placeholder="Your Email (optional)">
+                                        <p class="help-block text-danger"></p>
                                     </div>
-                                    <div class="clearfix"></div>
-                                    <div class="col-lg-12 text-center">
-                                        <div id="success"></div>
-                                        <button id="sendMessageButton" class="sim-btn btn-hover-new"
-                                            data-text="Send Message" type="submit">Send Message</button>
+                                    <div class="form-group">
+                                        <input class="form-control" id="phone" type="tel"
+                                            placeholder="Your Phone (optional)">
+                                        <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
-                    </div><!-- end col -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </div><!-- end section -->
-
-        <div class="copyrights">
-            <div class="container">
-                <div class="footer-distributed">
-                    <div class="footer-left">
-                        <p class="footer-links">
-                            <a href="#">Home</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Pricing</a>
-                            <a href="#">About</a>
-                            <a href="#">Faq</a>
-                            <a href="#">Contact</a>
-                        </p>
-                        <!-- <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Dominic</a> Design By : 
-					<a href="https://html.design/">html design</a></p> -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message" placeholder="Your Message"
+                                            required="required"
+                                            data-validation-required-message="Please enter a message."></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button id="sendMessageButton" class="sim-btn btn-hover-new"
+                                        data-text="Send Message" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">About</a>
+                        <a href="#">Faq</a>
+                        <a href="#">Contact</a>
+                    </p>
+                    <!-- <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Dominic</a> Design By : 
+					<a href="https://html.design/">html design</a></p> -->
                 </div>
-            </div><!-- end container -->
-        </div><!-- end copyrights -->
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
 
-        <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-        <!-- ALL JS FILES -->
-        <script src="js/all.js"></script>
-        <!-- Camera Slider -->
-        <script src="js/jquery.mobile.customized.min.js"></script>
-        <script src="js/jquery.easing.1.3.js"></script>
-        <script src="js/parallaxie.js"></script>
-        <script src="js/headline.js"></script>
-        <!-- Contact form JavaScript -->
-        <script src="js/jqBootstrapValidation.js"></script>
-        <script src="js/contact_me.js"></script>
-        <!-- ALL PLUGINS -->
-        <script src="js/custom.js"></script>
-        <script src="js/jquery.vide.js"></script>
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- Camera Slider -->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/headline.js"></script>
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.vide.js"></script>
 
 </body>
 
