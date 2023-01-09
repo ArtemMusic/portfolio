@@ -579,8 +579,8 @@ const langArr = {
     "en": "About Artem",
   },
   "artemtext" :  {
-    "ru": "Разработал сайты с использованием современных технологий. Улучшил процесс работы в команде, внедрив современный фреймворк и паттерны проектирования/разработки. <a href='https://github.com/ArtemMusic' target='_blank'>GitHub</a>",
-    "en": "Developed websites using modern technologies. Improved the teamwork process in the team by introducing a modern framework and design/development patterns. <a href='https://github.com/ArtemMusic' target='_blank'>GitHub</a>",
+    "ru": "Разработал сайты с использованием современных технологий. Улучшил процесс работы в команде, внедрив современный фреймворк и паттерны проектирования/разработки.",
+    "en": "Developed websites using modern technologies. Improved the teamwork process in the team by introducing a modern framework and design/development patterns.",
   },
   "artemtext2" :  {
     "ru": "— Реализовал успешные идеи разработки: паттерны, программная инженерия, Github для слияния разных частей приложения.",
