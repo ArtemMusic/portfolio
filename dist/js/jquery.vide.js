@@ -550,10 +550,10 @@ const langArr = {
     "ru": "Портфолио",
     "en": "Portfolio",
   },
-  "contact" :  {
-    "ru": "Связь",
-    "en": "Contact",
-  },
+  // "contact" :  {
+  //   "ru": "Связь",
+  //   "en": "Contact",
+  // },
   "title" :  {
     "ru": "Привет я Артём Музычук",
     "en": "Hello i'm Artem Muzychuk",
@@ -723,7 +723,7 @@ function changeLanguage() {
     document.querySelector('.lng-skils').innerHTML = langArr['skils'][hash];
     document.querySelector('.lng-serv').innerHTML = langArr['serv'][hash];
     document.querySelector('.lng-portfolio').innerHTML = langArr['portfolio'][hash];
-    document.querySelector('.lng-contact').innerHTML = langArr['contact'][hash];
+    // document.querySelector('.lng-contact').innerHTML = langArr['contact'][hash];
     document.querySelector('.lng-title').innerHTML = langArr['title'][hash];
     document.querySelector('.lng-subtitle').innerHTML = langArr['subtitle'][hash];
     document.querySelector('.lng-wd').innerHTML = langArr['wd'][hash];
@@ -755,13 +755,6 @@ function changeLanguage() {
     document.querySelector('.lng-serviottext').innerHTML = langArr['serviottext'][hash];
     document.querySelector('.lng-port').innerHTML = langArr['port'][hash];
     document.querySelector('.lng-porttext').innerHTML = langArr['porttext'][hash];
-    document.querySelector('.lng-contact').innerHTML = langArr['contact'][hash];
-    document.querySelector('.lng-about').innerHTML = langArr['about'][hash];
-    document.querySelector('.lng-contact').innerHTML = langArr['contact'][hash];
-    document.querySelector('.lng-about').innerHTML = langArr['about'][hash];
-    document.querySelector('.lng-contact').innerHTML = langArr['contact'][hash];
-    document.querySelector('.lng-about').innerHTML = langArr['about'][hash];
-    document.querySelector('.lng-contact').innerHTML = langArr['contact'][hash];
     document.querySelector('.lng-lang').innerHTML = langArr['lang'][hash];
 
     for (let key in langArr) {
