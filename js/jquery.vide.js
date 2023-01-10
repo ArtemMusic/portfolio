@@ -755,6 +755,9 @@ function changeLanguage() {
     document.querySelector('.lng-serviottext').innerHTML = langArr['serviottext'][hash];
     document.querySelector('.lng-port').innerHTML = langArr['port'][hash];
     document.querySelector('.lng-porttext').innerHTML = langArr['porttext'][hash];
+
+    // document.querySelector('.lng-sitetitle').innerHTML = langArr['sitetitle'][hash];
+
     document.querySelector('.lng-lang').innerHTML = langArr['lang'][hash];
 
     for (let key in langArr) {
