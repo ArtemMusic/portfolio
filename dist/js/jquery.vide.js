@@ -570,6 +570,10 @@ const langArr = {
     "ru": "Программный инженер",
     "en": "Software Engineer",
   },
+  "cicd2": {
+    "ru": "Программист-разработчик",
+    "en": "Programmer-developer",
+  },
   "cicd": {
     "ru": "CI/CD инженер",
     "en": "CI/CD Engineer",
@@ -579,36 +583,36 @@ const langArr = {
     "en": "About Artem",
   },
   "artemtext": {
-    "ru": "Разработал сайты с использованием современных технологий. Улучшил процесс работы в команде, внедрив современный фреймворк и паттерны проектирования/разработки.",
-    "en": "Developed websites using modern technologies. Improved the teamwork process in the team by introducing a modern framework and design/development patterns.",
+    "ru": "Являюсь студентом 2 курса СПБГУТ Программная инженерия. Увлекаюсь программированием и IT сферой с 14 лет. Пробовал себя в разных областях, начиная с игр и моделирования, заканчивая роботами и интернетом вещей. Но больше всего меня тянет в Web. Я обладаю всеми необходимыми программисту качествами: способен работать в команде, умею обучаться и обучать, мыслю за рамками тз, не боюсь брать ответственность и выполнять задачи в срок. Позиционирую себя как junior+ / почти уверенный middle (в web).",
+    "en": "I am a 2nd year student of SPbSUT Software engineering. I have been interested in programming and IT since the age of 14. I tried myself in different areas, from games and modeling to robots and the Internet of things. But most of all I am drawn to the Web. I have all the qualities a programmer needs: I am able to work in a team, I can learn and teach, I think beyond the scope of technical specifications, I am not afraid to take responsibility and complete tasks on time. I position myself as junior + / almost confident middle (on the web).",
   },
   "artemtext2": {
-    "ru": "— Реализовал успешные идеи разработки: паттерны, программная инженерия, Github для слияния разных частей приложения.",
-    "en": "— Implemented successful development ideas: apply patterns, software engineering, Git Hub to merge different parts of the application.",
+    "ru": "— Разработал сайты с использованием современных технологий (PHP7/8, Laravel9, SQL/MySQL, C++, JS и тд)<br><br>— Реализовал успешные идеи разработки: паттерны, программная инженерия, Github для слияния разных частей приложения.",
+    "en": "— Developed websites using modern technologies (PHP7/8, Laravel9, SQL/MySQL, C++, JS, etc.)<br><br>- Implemented successful development ideas: patterns, software engineering, Github to merge different parts of the application.",
   },
   "artemtext3": {
-    "ru": "- Применил и внедрил инструменты ci/cd для оптимизации развертывания высоконагруженной системы.",
-    "en": "- Applied and implemented ci/cd tools to optimize the deployment of a high-load system.",
+    "ru": "— Улучшил процесс работы в команде, внедрив современный фреймворк и паттерны проектирования/разработки. <br><br>— Применил и внедрил инструменты ci/cd для оптимизации развертывания высоконагруженной системы.",
+    "en": "— Improved the teamwork process by implementing a modern framework and design/development patterns. <br><br>— Applied and implemented ci/cd tools to optimize deployment of a high-load system.",
   },
   "artemtext4": {
     "ru": "— Разработали систему умного дома с телеграм-ботом.",
     "en": "— Developed a smart home system with a telegram bot.",
   },
   "artemtext5": {
-    "ru": "- Написал собственную базу данных на С++.",
-    "en": "- Wrote my own database in С++.",
+    "ru": "— Написал собственную базу данных на С++.",
+    "en": "— Wrote my own database in С++.",
   },
   "artemtext6": {
-    "ru": "- Проанализировал и оптимизировал более 20,000 строчек кода.",
-    "en": "- Analyzed and optimized more than 20,000 lines of code.",
+    "ru": "— Проанализировал и оптимизировал более 20,000 строчек кода.",
+    "en": "— Analyzed and optimized more than 20,000 lines of code.",
   },
   "cv": {
     "ru": "Скачать резюме (en & ru)",
     "en": "Download CV (en & ru)",
   },
   "mainskilstext": {
-    "ru": "Моё основное направление BackEnd. Но спектр навыков намного шире.",
-    "en": "My main direction is BackEnd. But range of skills is much wider.",
+    "ru": "Моё основное направление BackEnd. Но я постоянно работаю над развитием собственных навыков.",
+    "en": "My main direction is BackEnd. But I am constantly working on developing my own skills.",
   },
   "mainskils": {
     "ru": "Навыки",
@@ -627,8 +631,8 @@ const langArr = {
     "en": "Web Development",
   },
   "servwdtext": {
-    "ru": "Разработка происходит в BackEnd: PHP, Laravel, C++ и FrontEnd: VuesJs, HTML5, CSS3. Этот набор является самым популярным и позволяет быстро и эффективно строить сложные и масштабные системы. Для оптимизации использовался C++.",
-    "en": "Development takes place in the BackEnd: PHP, Laravel, C++ and FrontEnd: VuesJs, HTML5, CSS3. This set is the most popular and allows you to quickly and efficiently build complex and large-scale systems. Also, in addition to the above tools, C++ will be used to optimize.",
+    "ru": "Разработка BackEnd: PHP, Laravel, C++ и FrontEnd: VuesJs, HTML5, CSS3. Этот набор является самым популярным (несмотря на то, что есть достоиные альтерантивы) и позволяет быстро и эффективно строить сложные и масштабные системы. Как и везде есть свои плюсы и минусы.",
+    "en": "BackEnd: PHP, Laravel, C++ and FrontEnd: VuesJs, HTML5, CSS3. This set is the popular (despite the fact that there are worthy alternatives) and allows you to quickly and efficiently build complex and large-scale systems. As with everything, it has its pros and cons.",
   },
   "servse": {
     "ru": "Программная инженерия",
@@ -667,8 +671,8 @@ const langArr = {
     "en": "IoT",
   },
   "serviottext": {
-    "ru": "Помимо разработки веб-сайтов, я также принимал участие в разработке систем умного дома, искусственного интеллекта и телеграм-ботов. Для этого я собрал собственную команду. Это дало мне невероятное количество новых знаний, опыта работы в команде и технических навыков.",
-    "en": "In addition to developing websites, I also took part in the design of smart home systems, artificial intelligence, and telegram bots. To do this, I assembled my own team. It gave me an incredible amount of new knowledge, teamwork experience and technical skills.",
+    "ru": "Помимо программирования веб-сайтов, я также принимал участие в разработке систем умного дома, искусственного интеллекта и телеграм-ботов. Для этого я собрал собственную команду. Это дало невероятное количество новых знаний и технических навыков.",
+    "en": "In addition to programming websites, I also took part in the development of smart home systems, artificial intelligence and telegram bots. To do this, I assembled my own team. It gave an incredible amount of new knowledge, teamwork, and technical skills.",
   },
   "port": {
     "ru": "Портфолио",
