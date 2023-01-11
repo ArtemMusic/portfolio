@@ -503,68 +503,32 @@
 
 const langArr = {
   "title": {
-    "ru": "База данных на C++",
-    "en": "Database in C++"
+    "ru": 'Интернет-магазин "sMOKENINJA"',
+    "en": 'Online store "sMOKENINJA"'
   },
   "subtitle": {
-    "en": "The database is based on the vector container, built on C++ and QT libraries<br>The class characterizes the player of the football team",
-    "ru": "База данных основана на контейнере vector, создана на C++ и библиотеках QT<br>Класс характерезует игрока футбольной команды",
+    "en": "Internet showcase of original electronic cigarettes. Own design, visits analytics.<br>PHP8, Laravel9, SQL/MySql, Html/Css, Docker, Jobs, Yandex <br>smokeninja.ru",
+    "ru": "Интернет витрина оригинальных электронных сигарет. Собственный дизайн, аналитика посещений.<br>PHP8, Laravel9, SQL/MySql, Html/Css, Docker, Jobs, Yandex <br>smokeninja.ru",
+  },
+  "metr": {
+    "ru": "Яндекс аналитика",
+    "en": "Yandex analytics",
   },
   "doc": {
-    "ru": "Класс Vector",
-    "en": "Vector class",
+    "ru": "Собственный дизайн",
+    "en": "own design",
   },
   "log": {
-    "ru": "SOLID & KISS паттерны",
-    "en": "SOLID & KISS patterns",
-  },
-  "mail": {
-    "ru": "QT библиотеки",
-    "en": "QT libraries",
-  },
-  "filt": {
-    "ru": "Панель инструментов",
-    "en": "Toolbar",
+    "ru": "Автодеплой Docker",
+    "en": "Autodeploy Docker",
   },
   "adm": {
-    "ru": "Поиск по элементам",
-    "en": "Search by elements",
+    "ru": "Панель администратора и роли",
+    "en": "Admin panel and roles",
   },
   "jwt": {
-    "ru": "Строка состояния",
-    "en": "Status bar",
-  },
-  "crud": {
-    "ru": "CRUD из бд",
-    "en": "CRUD from db",
-  },
-  "crud": {
-    "ru": "CRUD из бд",
-    "en": "CRUD from db",
-  },
-  "crud": {
-    "ru": "CRUD из бд",
-    "en": "CRUD from db",
-  },
-  "crud": {
-    "ru": "CRUD из бд",
-    "en": "CRUD from db",
-  },
-  "crud": {
-    "ru": "CRUD из бд",
-    "en": "CRUD from db",
-  },
-  "crud": {
-    "ru": "CRUD из бд",
-    "en": "CRUD from db",
-  },
-  "crud": {
-    "ru": "CRUD из бд",
-    "en": "CRUD from db",
-  },
-  "crud": {
-    "ru": "CRUD из бд",
-    "en": "CRUD from db",
+    "ru": "JWT токен",
+    "en": "JWT  token",
   },
   "crud": {
     "ru": "CRUD из бд",
@@ -574,29 +538,37 @@ const langArr = {
     "ru": "Ru",
     "en": "En",
   },
-  "cv": {
-    "ru": "Скачать pdf",
-    "en": "Download pdf",
-  },
   "galery": {
-    "ru": "Ссылка на скачивание",
-    "en": "Download link",
-  },
-  "galery2": {
     "ru": "Галерея",
     "en": "Gallery",
   },
   "purpose": {
-    "ru": "Цель и описание",
-    "en": "Purpose and description",
+    "ru": "Цель",
+    "en": "Purpose",
   },
   "purposetext": {
-    "ru": "Улучшить знание и понимание программирования на языук C++ и его библиотеках, применить полученные в вузе знания на практике, построить удобную и быструю базу данных, разобраться в структуре работы баз данных<br><br>В качестве прототипа разрабатываемого контейнера был выбран vector. Выбор данного контейнера обусловлен личным опытом разработки, наличием хороший литературы и удобством использования.<br><br>Разрабатываемый контейнер обладает следующими функциями:<br><br>- Создание пустого контейнера<br>- Создание контейнера размера n<br>- Конструкторы копирования<br>- Оператор копирования<br>-	Конструктор перемещения<br>-	Оператор перемещения<br> -	Получение элемента по индексу<br>-	Вставка элементов<br>-	Удаление элементов<br>-	Очистка контейнера<br>-	Получение длины массива<br> -	Проверка на наличие элементов в массиве<br>-	Наличие класса итератора и итераторов begin и end",
-    "en": "Improve knowledge and understanding of programming in its C++ language and libraries, apply knowledge in practice, build a convenient and efficient database, understand the accuracy of database operation<br><br>Vector was chosen as a prototype of the developed container. The choice of container is inevitably a personal development experience, having good literature and use.<br><br>The developed container implements the functions:<br><br>- Create an empty container<br>- Create a container of size n<br>- Constructors suggestion< br>- Sentence operator<br>- Move constructor<br>- Move operator<br> - Get element by index<br>- Insert elements<br>- Remove elements<br>- Clearing the container<br>- Getting the length of the array<br> - Checking for the presence of elements in the array<br>- Presence of the iterator class and begin and end iterators",
+    "ru": "Получение опыта в написании интернет-магазина, аналитика заинтересованности товарами и вослечённость аудитории. Продвинутое развитие ключевых навыков в web разработке, работе с базами данных, паттернах программирования и проектирования, автодеплой и поддержание сайта на хостинге. Опыт во front-end и back-end разработке нагруженных программных продуктах.",
+    "en": "Gaining experience in writing an online store, analytics of product interest and audience engagement. Advanced development of key skills in web development, working with databases, programming and design patterns, auto-deploy and maintaining a site on a hosting. Experience in front-end and back-end development of high-loaded software products.",
   },
   "purpose2": {
     "ru": "Ключевые особенности",
     "en": "Key Features",
+  },
+  "purpose2text3": {
+    "ru": "Яндекс аналитика, автодеплой docker, авторизация и система ролей, CRUD постов и взаимодействие с базой данных, паттерны MVC и SOLID, bootstrap, админпанель, JWT",
+    "en": "Yandex analytics, autodeploy docker, authorization and role system, CRUD posts and interaction with the database, MVC and SOLID patterns, bootstrap, admin panel, JWT",
+  },
+  "purpose3": {
+    "ru": "Освоено/развито",
+    "en": "Mastered/developed",
+  },
+  "purpose3text": {
+    "ru": "Реализовывая данный сайт я освоил как в теории, так и на практике следующие аспекты:",
+    "en": "Implementing this site, I have mastered both in theory and in practice the following aspects of:",
+  },
+  "purpose3text2": {
+    "ru": "<li>- PHP 7/8</li><li>- Подключение и анализ Яндкес метрики</li><li>- Автодеплой и Docker</li><li>- JS</li><li>- SQL/MySQL и Отношения один к одному, один ко многим, многие ко многим<li>- Laravel 8/9 и его особенности</li><li>- Composer</li><li>- Npm</li><li>- Паттерны SOLID и MVC</li><li>- Этапы создания и проектирования программного продукта, жизненный цикл программного продукта</li><li>- Bootstrap</li><li>- Валидация форм</li><li>- Деплой на продакшен</li><li>- Реализация панели администратора</li><li>- JWT </li><li>- Git/GitHub </li><li>- CRUD с транзакциями</li>",
+    "en": "<li>- PHP 7/8</li><li>- Connecting and analyzing Yandex metrics</li><li>- Autodeploy and Docker</li><li>- JS</li><li>- SQL /MySQL and One-to-one, one-to-many, many-to-many relationships<li>- Laravel 8/9 and its features</li><li>- Composer</li><li>- Npm</li><li >- SOLID and MVC patterns</li><li>- Stages of creating and designing a software product, software product life cycle</li><li>- Bootstrap</li><li>- Form validation</li><li >- Deploy to production</li><li>- Implementation of the admin panel</li><li>- JWT </li><li>- Git/GitHub </li><li>- CRUD with transactions</li >",
   },
 }
 
