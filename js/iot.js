@@ -6,7 +6,7 @@
  *  Made by Ilya Makarov
  *  Under MIT License
  */
-!(function(root, factory) {
+!(function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     define(['jquery'], factory);
   } else if (typeof exports === 'object') {
@@ -14,7 +14,7 @@
   } else {
     factory(root.jQuery);
   }
-})(this, function($) {
+})(this, function ($) {
 
   'use strict';
 
@@ -168,7 +168,7 @@
    * @param {Function} callback
    */
   function findPoster(path, callback) {
-    var onLoad = function() {
+    var onLoad = function () {
       callback(this.src);
     };
 
@@ -228,7 +228,7 @@
    * Initialization
    * @public
    */
-  Vide.prototype.init = function() {
+  Vide.prototype.init = function () {
     var vide = this;
     var path = vide.path;
     var poster = path;
@@ -277,7 +277,7 @@
 
     // Set a video poster
     if (posterType === 'detect') {
-      findPoster(poster, function(url) {
+      findPoster(poster, function (url) {
         $wrapper.css('background-image', 'url(' + url + ')');
       });
     } else if (posterType !== 'none') {
@@ -348,23 +348,23 @@
       opacity: 0
     })
 
-    // Resize a video, when it's loaded
-    .one('canplaythrough.' + PLUGIN_NAME, function() {
-      vide.resize();
-    })
+      // Resize a video, when it's loaded
+      .one('canplaythrough.' + PLUGIN_NAME, function () {
+        vide.resize();
+      })
 
-    // Make it visible, when it's already playing
-    .one('playing.' + PLUGIN_NAME, function() {
-      $video.css({
-        visibility: 'visible',
-        opacity: 1
+      // Make it visible, when it's already playing
+      .one('playing.' + PLUGIN_NAME, function () {
+        $video.css({
+          visibility: 'visible',
+          opacity: 1
+        });
+        $wrapper.css('background-image', 'none');
       });
-      $wrapper.css('background-image', 'none');
-    });
 
     // Resize event is available only for 'window'
     // Use another code solutions to detect DOM elements resizing
-    $element.on('resize.' + PLUGIN_NAME, function() {
+    $element.on('resize.' + PLUGIN_NAME, function () {
       if (settings.resizing) {
         vide.resize();
       }
@@ -379,7 +379,7 @@
    * @public
    * @returns {HTMLVideoElement}
    */
-  Vide.prototype.getVideoObject = function() {
+  Vide.prototype.getVideoObject = function () {
     return this.$video[0];
   };
 
@@ -387,7 +387,7 @@
    * Resize a video background
    * @public
    */
-  Vide.prototype.resize = function() {
+  Vide.prototype.resize = function () {
     if (!this.$video) {
       return;
     }
@@ -425,7 +425,7 @@
    * Destroy a video background
    * @public
    */
-  Vide.prototype.destroy = function() {
+  Vide.prototype.destroy = function () {
     delete $[PLUGIN_NAME].lookup[this.index];
     this.$video && this.$video.off(PLUGIN_NAME);
     this.$element.off(PLUGIN_NAME).removeData(PLUGIN_NAME);
@@ -448,10 +448,10 @@
    * @returns {JQuery}
    * @constructor
    */
-  $.fn[PLUGIN_NAME] = function(path, options) {
+  $.fn[PLUGIN_NAME] = function (path, options) {
     var instance;
 
-    this.each(function() {
+    this.each(function () {
       instance = $.data(this, PLUGIN_NAME);
 
       // Destroy the plugin instance if exists
@@ -466,11 +466,11 @@
     return this;
   };
 
-  $(document).ready(function() {
+  $(document).ready(function () {
     var $window = $(window);
 
     // Window resize event listener
-    $window.on('resize.' + PLUGIN_NAME, function() {
+    $window.on('resize.' + PLUGIN_NAME, function () {
       for (var len = $[PLUGIN_NAME].lookup.length, i = 0, instance; i < len; i++) {
         instance = $[PLUGIN_NAME].lookup[i];
 
@@ -481,7 +481,7 @@
     });
 
     // https://github.com/VodkaBears/Vide/issues/68
-    $window.on('unload.' + PLUGIN_NAME, function() {
+    $window.on('unload.' + PLUGIN_NAME, function () {
       return false;
     });
 
@@ -489,7 +489,7 @@
     // Add 'data-vide-bg' attribute with a path to the video without extension
     // Also you can pass options throw the 'data-vide-options' attribute
     // 'data-vide-options' must be like 'muted: false, volume: 0.5'
-    $(document).find('[data-' + PLUGIN_NAME + '-bg]').each(function(i, element) {
+    $(document).find('[data-' + PLUGIN_NAME + '-bg]').each(function (i, element) {
       var $element = $(element);
       var options = $element.data(PLUGIN_NAME + '-options');
       var path = $element.data(PLUGIN_NAME + '-bg');
@@ -502,63 +502,63 @@
 
 
 const langArr = {
-  "title" : {
-    "ru" : "Интернет вещей 'Умный дом'",
-    "en" : "Internet of Things 'Smart home'"
+  "title": {
+    "ru": "Интернет вещей 'Умный дом'",
+    "en": "Internet of Things 'Smart home'"
   },
-  "subtitle" :  {
+  "subtitle": {
     "en": "This project was developed and implemented by a team of 1st year students. <br>The system is capable of performing actions and solving certain everyday tasks without human intervention.",
     "ru": "Данный проект был разработан и реализован командой студентов 1 курса. <br>Система способна выполнять действия и решать определённые повседневные задачи без участия человека.",
   },
-  "doc" :  {
+  "doc": {
     "ru": "Телеграм Бот",
     "en": "Telegram Bot",
   },
-  "log" :  {
+  "log": {
     "ru": "IoT система",
     "en": "IoT system",
   },
-  "mail" :  {
+  "mail": {
     "ru": "Автоматизация",
     "en": "Activity automation",
   },
-  "filt" :  {
+  "filt": {
     "ru": "надежность и безопастность",
     "en": "reliability and safety",
   },
-  "adm" :  {
+  "adm": {
     "ru": "современные устройства",
     "en": "modern devices",
   },
-  "lang" :  {
+  "lang": {
     "ru": "Ru",
     "en": "En",
   },
-  "cv" :  {
+  "cv": {
     "ru": "Скачать pdf",
     "en": "Download pdf",
   },
-  "galery" :  {
+  "galery": {
     "ru": "Ссылка на скачивание",
     "en": "Download link",
   },
-  "galery2" :  {
+  "galery2": {
     "ru": "Галерея",
     "en": "Gallery",
   },
-  "purpose" :  {
+  "purpose": {
     "ru": "Цель и описание",
     "en": "Purpose and description",
   },
-  "purposetext" :  {
+  "purposetext": {
     "ru": "Основной акцент сделан на применении всех полученных в ходе обучения знаний и использования максимального кол-ва лабораторного оборудования. <br><br> Домашняя автоматизация, или умный дом — система домашних устройств, способных выполнять действия и решать определённые повседневные задачи без участия человека.<br><br>Система должна быть удобна в использовании, иметь понятный интерфей и не нагружать приложениями.<br><br>Пользователю должно быть интуитивно понятно как пользоваться умным домом.<br><br>Экосистема автоматизированного управления должна обеспечивать надлежащую и бесперебойную работу.",
     "en": "The main emphasis is placed on the application of all the knowledge gained during the training and the use of the maximum number of laboratory equipment. <br><br> Home automation, or smart home, is a system of home devices capable of performing actions and solving certain everyday tasks without human intervention.<br><br>The system should be easy to use, have a clear interface and not be loaded with applications. <br><br>It should be intuitive for the user to use the smart home.<br><br>The automated control ecosystem should ensure proper and uninterrupted operation.",
   },
-  "purpose2" :  {
+  "purpose2": {
     "ru": "Ключевые особенности",
     "en": "Key Features",
   },
-  "purpose2text3" :  {
+  "purpose2text3": {
     "ru": "- Телеграм бот для управления<br><br>- Современные устройства<br><br>- Разработка в команде<br><br>- Мониторинг Home Assistant<br><br>- Автоматизация через яндекс Алису<br><br>- Комлпекс датчиков и исполнительных приборов: Датчик движения, Датчик температуры, Датчик влажности, Датчик кач-ва воздуха, Датчик дыма, Датчик открытия двери, Настольная лампа, Умная розетка, Кнопка управления, Яндекс Станция Макс, Умная камера, Raspberry Pi 3, SLS ZigBee Gateway<br><br>- Система освещения<br><br>- Система безопастности<br><br>- Климат контроль",
     "en": "- Telegram bot for control<br><br>- Modern devices<br><br>- Team development<br><br>- Home Assistant monitoring<br><br>- Automation via Yandex Alice<br><br >- A set of sensors and actuators: Motion sensor, Temperature sensor, Humidity sensor, Air quality sensor, Smoke sensor, Door open sensor, Table lamp, Smart socket, Control button, Yandex Station Max, Smart camera, Raspberry Pi 3, SLS ZigBee Gateway<br><br>- Lighting system<br><br>- Security system<br><br>- Climate control",
   },
@@ -586,33 +586,33 @@ select.addEventListener('change', changeURLLanguage);
 
 // перенаправить на url с указанием языка
 function changeURLLanguage() {
-    let lang = select.value;
-    location.href = window.location.pathname + '#' + lang;
-    location.reload();
+  let lang = select.value;
+  location.href = window.location.pathname + '#' + lang;
+  location.reload();
 }
 
 function changeLanguage() {
-    let hash = window.location.hash;
-    hash = hash.substr(1);
-    console.log(hash);
-    if (!allLang.includes(hash)) {
-        location.href = window.location.pathname + '#en';
-        location.reload();
+  let hash = window.location.hash;
+  hash = hash.substr(1);
+  console.log(hash);
+  if (!allLang.includes(hash)) {
+    location.href = window.location.pathname + '#en';
+    location.reload();
+  }
+  select.value = hash;
+
+  document.querySelector('.lng-title').innerHTML = langArr['title'][hash];
+
+
+  document.querySelector('.lng-galery').innerHTML = langArr['galery'][hash];
+
+  for (let key in langArr) {
+    let elem = document.querySelector('.lng-' + key);
+    if (elem) {
+      elem.innerHTML = langArr[key][hash];
     }
-    select.value = hash;
 
-    document.querySelector('.lng-title').innerHTML = langArr['title'][hash];
-    
-    
-    document.querySelector('.lng-galery').innerHTML = langArr['galery'][hash];
-
-    for (let key in langArr) {
-        let elem = document.querySelector('.lng-' + key);
-        if (elem) {
-            elem.innerHTML = langArr[key][hash];
-        }
-
-    }
+  }
 }
 
 changeLanguage();

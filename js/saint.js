@@ -6,7 +6,7 @@
  *  Made by Ilya Makarov
  *  Under MIT License
  */
-!(function(root, factory) {
+!(function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     define(['jquery'], factory);
   } else if (typeof exports === 'object') {
@@ -14,7 +14,7 @@
   } else {
     factory(root.jQuery);
   }
-})(this, function($) {
+})(this, function ($) {
 
   'use strict';
 
@@ -168,7 +168,7 @@
    * @param {Function} callback
    */
   function findPoster(path, callback) {
-    var onLoad = function() {
+    var onLoad = function () {
       callback(this.src);
     };
 
@@ -228,7 +228,7 @@
    * Initialization
    * @public
    */
-  Vide.prototype.init = function() {
+  Vide.prototype.init = function () {
     var vide = this;
     var path = vide.path;
     var poster = path;
@@ -277,7 +277,7 @@
 
     // Set a video poster
     if (posterType === 'detect') {
-      findPoster(poster, function(url) {
+      findPoster(poster, function (url) {
         $wrapper.css('background-image', 'url(' + url + ')');
       });
     } else if (posterType !== 'none') {
@@ -348,23 +348,23 @@
       opacity: 0
     })
 
-    // Resize a video, when it's loaded
-    .one('canplaythrough.' + PLUGIN_NAME, function() {
-      vide.resize();
-    })
+      // Resize a video, when it's loaded
+      .one('canplaythrough.' + PLUGIN_NAME, function () {
+        vide.resize();
+      })
 
-    // Make it visible, when it's already playing
-    .one('playing.' + PLUGIN_NAME, function() {
-      $video.css({
-        visibility: 'visible',
-        opacity: 1
+      // Make it visible, when it's already playing
+      .one('playing.' + PLUGIN_NAME, function () {
+        $video.css({
+          visibility: 'visible',
+          opacity: 1
+        });
+        $wrapper.css('background-image', 'none');
       });
-      $wrapper.css('background-image', 'none');
-    });
 
     // Resize event is available only for 'window'
     // Use another code solutions to detect DOM elements resizing
-    $element.on('resize.' + PLUGIN_NAME, function() {
+    $element.on('resize.' + PLUGIN_NAME, function () {
       if (settings.resizing) {
         vide.resize();
       }
@@ -379,7 +379,7 @@
    * @public
    * @returns {HTMLVideoElement}
    */
-  Vide.prototype.getVideoObject = function() {
+  Vide.prototype.getVideoObject = function () {
     return this.$video[0];
   };
 
@@ -387,7 +387,7 @@
    * Resize a video background
    * @public
    */
-  Vide.prototype.resize = function() {
+  Vide.prototype.resize = function () {
     if (!this.$video) {
       return;
     }
@@ -425,7 +425,7 @@
    * Destroy a video background
    * @public
    */
-  Vide.prototype.destroy = function() {
+  Vide.prototype.destroy = function () {
     delete $[PLUGIN_NAME].lookup[this.index];
     this.$video && this.$video.off(PLUGIN_NAME);
     this.$element.off(PLUGIN_NAME).removeData(PLUGIN_NAME);
@@ -448,10 +448,10 @@
    * @returns {JQuery}
    * @constructor
    */
-  $.fn[PLUGIN_NAME] = function(path, options) {
+  $.fn[PLUGIN_NAME] = function (path, options) {
     var instance;
 
-    this.each(function() {
+    this.each(function () {
       instance = $.data(this, PLUGIN_NAME);
 
       // Destroy the plugin instance if exists
@@ -466,11 +466,11 @@
     return this;
   };
 
-  $(document).ready(function() {
+  $(document).ready(function () {
     var $window = $(window);
 
     // Window resize event listener
-    $window.on('resize.' + PLUGIN_NAME, function() {
+    $window.on('resize.' + PLUGIN_NAME, function () {
       for (var len = $[PLUGIN_NAME].lookup.length, i = 0, instance; i < len; i++) {
         instance = $[PLUGIN_NAME].lookup[i];
 
@@ -481,7 +481,7 @@
     });
 
     // https://github.com/VodkaBears/Vide/issues/68
-    $window.on('unload.' + PLUGIN_NAME, function() {
+    $window.on('unload.' + PLUGIN_NAME, function () {
       return false;
     });
 
@@ -489,7 +489,7 @@
     // Add 'data-vide-bg' attribute with a path to the video without extension
     // Also you can pass options throw the 'data-vide-options' attribute
     // 'data-vide-options' must be like 'muted: false, volume: 0.5'
-    $(document).find('[data-' + PLUGIN_NAME + '-bg]').each(function(i, element) {
+    $(document).find('[data-' + PLUGIN_NAME + '-bg]').each(function (i, element) {
       var $element = $(element);
       var options = $element.data(PLUGIN_NAME + '-options');
       var path = $element.data(PLUGIN_NAME + '-bg');
@@ -502,75 +502,75 @@
 
 
 const langArr = {
-  "title" : {
-    "ru" : "Сайт информационных постов",
-    "en" : "Information posts site"
+  "title": {
+    "ru": "Сайт информационных постов",
+    "en": "Information posts site"
   },
-  "subtitle" :  {
+  "subtitle": {
     "ru": "Данный проект – мой первый опыт в создании сайта с применением современных средств разработки. <br>PHP8, Laravel9, SQL/MySql, Html/Css<br>saint-craft.ru",
     "en": "This project is my first experience in creating a website using modern development tools. <br>PHP8, Laravel9, SQL/MySql, Html/Css<br>saint-craft.ru",
   },
-  "crud" :  {
+  "crud": {
     "ru": "CRUD из бд",
     "en": "CRUD from db",
   },
-  "filt" :  {
+  "filt": {
     "ru": "Фильтрация и валидация",
     "en": "Filtering and validation",
   },
-  "adm" :  {
+  "adm": {
     "ru": "Панель администратора",
     "en": "Admin's panel",
   },
-  "jwt" :  {
+  "jwt": {
     "ru": "Jwt токен",
     "en": "Jwt token",
   },
-  "log" :  {
+  "log": {
     "ru": "Авторизация и роли",
     "en": "Authorization and roles",
   },
-  "purpose" :  {
+  "purpose": {
     "ru": "Цель",
     "en": "Purpose",
   },
-  "purposetext" :  {
+  "purposetext": {
     "ru": "Изучение основных и необходимых технологий в разработке сайтов, получение практического опыта при работе с базами данных, создании транзакций, построении логики работы и архитектуры приложения. Написание своей документации.",
     "en": " Studying the basic and necessary technologies in website development, gaining practical experience when working with databases, creating transactions, building the logic of work and architecture applications. Writing your documentation.",
   },
-  "purpose2" :  {
+  "purpose2": {
     "ru": "Ключевые особенности",
     "en": "Key Features",
   },
-  "purpose2text" :  {
+  "purpose2text": {
     "ru": "Данные для авторизации: root@mail.ru rootroot",
     "en": "Authorization data: root@mail.ru rootroot",
   },
-  "purpose2text2" :  {
+  "purpose2text2": {
     "ru": "GitHub страница: <a href='https://github.com/ArtemMusic/PostsSite' target='_blank'><i class='fa-brands fa-github'></i></a>",
     "en": "GitHub page: <a href='https://github.com/ArtemMusic/PostsSite' target='_blank'><i class='fa-brands fa-github'></i></a>",
   },
-  "purpose2text3" :  {
+  "purpose2text3": {
     "ru": "Авторизация и система ролей, CRUD постов и взаимодействие с базой данных, паттерны MVC и SOLID, bootstrap, админпанель, валидация форм, фильтрация, пагинация, JWT, REST.",
     "en": "Authorization and role system, CRUD posts and interaction with the database, MVC patterns and SOLID, bootstrap, admin panel, form validation, filtering, pagination, JWT, REST.",
   },
-  "purpose3" :  {
+  "purpose3": {
     "ru": "Освоено/развито",
     "en": "Mastered/developed",
   },
-  "purpose3text" :  {
+  "purpose3text": {
     "ru": "Реализовывая данный сайт я освоил как в теории, так и на практике следующие аспекты:",
     "en": "Implementing this site, I have mastered both in theory and in practice the following aspects of:",
   },
-  "purpose3text2" :  {
+  "purpose3text2": {
     "ru": "<li>- PHP 7/8</li> <li>- SQL/MySQL и Отношения один к одному, один ко многим, многие ко многим<li>- Laravel 8/9 и его особенности</li><li>- Composer</li><li>- Npm</li><li>- Паттерны SOLID и MVC</li><li>- Этапы создания и проектирования программного продукта, жизненный цикл программного продукта</li><li>- Bootstrap</li><li>- Валидация форм</li><li>- Деплой на продакшен</li><li>- Реализация панели администратора</li><li>- Ассинхронные запросы</li><li>- RestfulAPI</li> <li>- JWT </li><li>- Git/GitHub </li><li>- CRUD с транзакциями</li><li>- Написал свою документацию</li>",
     "en": "<li>- PHP 7/8</li> <li>- SQL/MySQL and one to one relationship, one to many, many to many<li>- Laravel 8/9 and its features</li><li>- Composer</li><li>- Npm</li><li>- Patterns SOLID and MVC</li><li>- Stages of creating and designing a software product, life software product cycle</li><li>- Bootstrap</li><li>- Form validation</li><li>- Deploy to production</li><li>- Implementation of the admin panel</li><li>- Asynchronous requests</li><li>- RestfulAPI</li> <li>- JWT </li><li>- Git/GitHub </li><li>- CRUD with transactions</li><li>- Wrote my documentation</li>",
   },
-  "lang" :  {
+  "lang": {
     "ru": "Ru",
     "en": "En",
   },
-  "galery" :  {
+  "galery": {
     "ru": "Галерея",
     "en": "Gallery",
   },
@@ -586,39 +586,39 @@ select.addEventListener('change', changeURLLanguage);
 
 // перенаправить на url с указанием языка
 function changeURLLanguage() {
-    let lang = select.value;
-    location.href = window.location.pathname + '#' + lang;
-    location.reload();
+  let lang = select.value;
+  location.href = window.location.pathname + '#' + lang;
+  location.reload();
 }
 
 function changeLanguage() {
-    let hash = window.location.hash;
-    hash = hash.substr(1);
-    console.log(hash);
-    if (!allLang.includes(hash)) {
-        location.href = window.location.pathname + '#en';
-        location.reload();
+  let hash = window.location.hash;
+  hash = hash.substr(1);
+  console.log(hash);
+  if (!allLang.includes(hash)) {
+    location.href = window.location.pathname + '#en';
+    location.reload();
+  }
+  select.value = hash;
+
+  document.querySelector('.lng-title').innerHTML = langArr['title'][hash];
+  document.querySelector('.lng-subtitle').innerHTML = langArr['subtitle'][hash];
+  document.querySelector('.lng-crud').innerHTML = langArr['crud'][hash];
+  document.querySelector('.lng-log').innerHTML = langArr['log'][hash];
+  document.querySelector('.lng-adm').innerHTML = langArr['adm'][hash];
+  document.querySelector('.lng-jwt').innerHTML = langArr['jwt'][hash];
+  document.querySelector('.lng-filt').innerHTML = langArr['filt'][hash];
+  document.querySelector('.lng-lang').innerHTML = langArr['lang'][hash];
+
+  document.querySelector('.lng-purpose').innerHTML = langArr['purpose'][hash];
+
+  for (let key in langArr) {
+    let elem = document.querySelector('.lng-' + key);
+    if (elem) {
+      elem.innerHTML = langArr[key][hash];
     }
-    select.value = hash;
 
-    document.querySelector('.lng-title').innerHTML = langArr['title'][hash];
-    document.querySelector('.lng-subtitle').innerHTML = langArr['subtitle'][hash];
-    document.querySelector('.lng-crud').innerHTML = langArr['crud'][hash];
-    document.querySelector('.lng-log').innerHTML = langArr['log'][hash];
-    document.querySelector('.lng-adm').innerHTML = langArr['adm'][hash];
-    document.querySelector('.lng-jwt').innerHTML = langArr['jwt'][hash];
-    document.querySelector('.lng-filt').innerHTML = langArr['filt'][hash];
-    document.querySelector('.lng-lang').innerHTML = langArr['lang'][hash];
-    
-    document.querySelector('.lng-purpose').innerHTML = langArr['purpose'][hash];
-
-    for (let key in langArr) {
-        let elem = document.querySelector('.lng-' + key);
-        if (elem) {
-            elem.innerHTML = langArr[key][hash];
-        }
-
-    }
+  }
 }
 
 changeLanguage();
