@@ -1,532 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Mobile Metas -->
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-    })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(91984017, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true
-    });
-</script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/91984017" style="position:absolute; left:-9999px;" alt="" /></div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
-
-<!-- Site Metas -->
-<title>Muzychuk</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<!-- Site Icons -->
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<script src="https://kit.fontawesome.com/a90cdf756d.js" crossorigin="anonymous"></script>
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- Site CSS -->
-<link rel="stylesheet" href="style.css">
-<!-- Responsive CSS -->
-<link rel="stylesheet" href="css/responsive.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/custom.css">
-<script src="js/modernizr.js"></script> <!-- Modernizr -->
-
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Steller landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Музычук Артём</title>
+    <!-- font icons -->
+    <script src="https://kit.fontawesome.com/a90cdf756d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap + Steller main styles -->
+    <link rel="stylesheet" href="assets/css/steller.css">
 </head>
 
-<body id="page-top" class="politics_version">
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    <!-- LOADER -->
-    <div id="preloader">
-        <div id="main-ld">
-            <div id="loader"></div>
-        </div>
-    </div><!-- end loader -->
-    <!-- END LOADER -->
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img class="img-fluid" src="images/logo.png" alt="" />
-            </a>
-            <div class="input-group select" style="width: auto !important;">
-                <div class="input-group-prepend">
-                    <button class="btn btn-outline-secondary dropdown-toggle lng-lang" type="button"
-                        data-toggle="dropdown" aria-expanded="false"
-                        style="padding: 0px 0px 0px 0px !important;margin-right: 5px; border-top-right-radius: 4px !important; border-bottom-right-radius: 4px !important;">En</button>
-                    <select class="dropdown-menu" name="" id="">
-                        <option value="ru" class="dropdown-item">Русский</option>
-                        <option value="en" class="dropdown-item">English</option>
-                    </select>
-                </div>
-            </div>
-            <button class="navbar-toggler navbar-toggler-right lng-menu" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                <i class="fa fa-bars"></i>
+            <a class="navbar-brand" href="#"><img src="assets/imgs/my-category-svgrepo-com (1).svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger active lng-home" href="#home">Home</a>
+                        <a class="nav-link" href="#home">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger lng-about" href="#about">About</a>
+                        <a class="nav-link" href="#about">Обо мне</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger lng-skils" href="#blog">Skils</a>
+                        <a class="nav-link" href="#service">Специальности</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger lng-serv" href="#services">Services</a>
+                        <a class="nav-link" href="#portfolio">Портфолио</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger lng-portfolio" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#testmonial">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
                     </li>
                     <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
-            </li> -->
+                        <a class="- btn btn-primary rounded ml-4" href="components.html">Copmonents</a>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- End of page navibation -->
 
-    <section id="home" class="main-banner parallaxie"
-        style="background: url('uploads/a.gif'); background-color: white;">
-        <div class="heading">
-            <h1 class="lng-title">Hello i'm Artem Muzychuk</h1>
-            <p class="lng-subtitle">"I specialize in WEB development and software engineering.
-                <br>Student of the Bonch-Bruevich St.
-                Petersburg State University"
-            </p>
-            <h3 class="cd-headline clip is-full-width">
-                <span class="cd-words-wrapper">
-                    <b class="is-visible lng-wd">Web Developer</b>
-                    <b class="lng-se">Software Engeener</b>
-                    <b class="lng-cicd2">CI/CD Engeener</b>
-                    <b class="lng-cicd">CI/CD Engeener</b>
-                </span>
-            </h3>
+    <!-- Page Header -->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="infos">
+                <h6 class="subtitle">Привет, я</h6>
+                <h6 class="title">Артём Музычук</h6>
+                <br>
+                <p> Программный инженер, проектный менеджер, разработчик</p>
+
+                <div class="buttons pt-3">
+                    <button class="btn btn-primary rounded">Скачать резюме</button>
+                </div>
+
+                <div class="socials mt-4">
+                    <a class="social-item" href="https://t.me/a_rtem_m"><i class="fa-brands fa-telegram"></i></a>
+                    <a class="social-item" href="https://github.com/ArtemMusic"><i class="fa-brands fa-github"></i></a>
+                    <a class="social-item" href="https://hh.ru/resume/11b147d6ff0b9552320039ed1f505a4e74786e"><i class="fa-solid fa-h"></i></a>
+                    <a class="social-item" href="mailto:muzychukartem.music@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="img-holder">
+                <img src="assets/imgs/photo_2023-09-13_00-06-03.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Header-widget -->
+        <!-- <div class="widget"> -->
+        <!-- <div class="widget-item">
+                <h2>124</h2>
+                <p>Happy Clients</p>
+            </div>
+            <div class="widget-item">
+                <h2>456</h2>
+                <p>Project Completed</p>
+            </div>
+            <div class="widget-item">
+                <h2>789</h2>
+                <p>Awards Won</p>
+            </div>
+        </div> -->
+    </header>
+    <!-- End of Page Header -->
+
+    <!-- About section -->
+    <section id="about" class="section mt-3">
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="assets/imgs/face.jpg" alt="" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9" style="text-align: justify;">
+                    <h6 class="title">Артём Музычук</h6>
+                    <p class="mt-3">Здравствуйте!</p>
+                    <p>Я молодой специалист в области программной инженерии и управления проектами. Учусь на 3 курсе
+                        Санкт-Петербургского государственного университета телекоммуникаций по направлению
+                        <b>"программная инженерия"</b>.
+                    </p>
+
+                    <p>Обладаю техническим коммерческим и не коммерческим опытом в разработке программного обеспечения в
+                        качестве <b>middle fullstack-разработчика</b>. Имею огромный перечень выполненных разнообразных работ с разными людьми</p>
+
+                        
+                        <p>Мои навыки включают сбор требований и их анализ,
+                        создание архитектур, проектирование и разработку программного обеспечения и процессов его
+                        создания, тестирование и отладку продуктов.</p>
+
+                    <p>Также я имею необходимые теоретические и практические знания и опыт для управления командой и
+                        ведения продукта от идеи до прекращения эксплуатации, что позволило мне узнать в чем заключается
+                        работа проектного менеджера и программного инженера. <b>Я знаком с жизненным циклом продукта,
+                            гибкими и твердыми методологиями, scrum, kanban, XP, компонентно-ориентированным методом,
+                            эволюционной моделью и другими процессами. Умею собирать и анализировать требования, строить
+                            макеты и проектировать процессы деятельности, предугадывать и устранять риски и
+                            ликвидировать потери. Разбираюсь в бережливой разработке</b>.
+
+                    <p>В работе буду акцентировать внимание на управление сроками, качеством, удобством и
+                        производительности разрабатываемой программной системой. Постараюсь четко и грамотно составить
+                        основные функциональные и не функциональные требования. Обязательно спроектирую уникальную
+                        методологию, по которой пойдет разработка системы.</p>
+
+                    <p>Я понимаю, что главное в продукте - это его <b>качество и удовлетворение потребностей заказчика в
+                            срок</b>, при этом поддерживая гармонические взаимоотношения в команде и ведя прозрачные
+                        процессы. </p>
+
+                    <h5>Hard-skills:</h5>
+
+                    <ul>
+                        <p>
+                            <li><p>Программирование на различных языках программирования, таких как <b>Java, C++, Python,
+                                JavaScript, PHP</b> и другие</p></li>
+                            
+                            <li><p>Программирование и управление <b>CRM</b> системами(AmoCrm)</li></p>
+                            
+                            <li><p>Разработка веб-приложений, включая использование фреймворков и библиотек, таких как
+                                <b>React, Angular, Vue, laravel</b> и другие</p>
+                            </li>
+                            
+                            <li><p>Использование баз данных, таких как <b>MySQL, PostgreSQL, MongoDB</b></p></li>
+                            
+                            <li><p>Знаком с <b>DevOps, CI/CD, Docker</b></p></li>
+                            
+                            <li><p>Управление проектами, используя как гибкие Agile-методологии, такие как <b>Scrum, XP и
+                                Kanban, так и тяжеловесные</b>.</p></li>
+                            
+                            <li><p>Понимаю, что для каждого проекта нужно строить уникальную архитектуру процессов.</p></li>
+                            
+                            <li><p>Составление технических документов, включая <b>спецификации требований</b> и
+                                документацию по проекту</p></li>
+                                <li><p>Опытный пользователь пакетов Office(Exel, Word, PowerPoint)</p></li>
+
+                        </p>
+                    </ul>
+
+                    </p>
+                    
+                    <h5>Soft-skills:</h5>
+
+                    <ul>
+                        <p>
+                            <li><p>Коммуникабельность и умение решать проблемы</p></li>
+                
+
+                            <li> <p>Грамотность речи и письма</p></li>
+                            
+
+                            <li><p>Управление временем и планирование</p></li>
+                            
+
+                            <li><p>Работа в команде и управление персоналом</p></li>
+
+                            
+                            <li><p>Аналитическое и систематическое мышление</p></li>
+
+                            
+                            <li><p>Лидерские качества</p></li>
+
+                            
+                            <li><p>Умение аргументировать свой выбор и отстаивать свою точку зрения</p></li>
+
+                            
+                            <li><p>Адаптация к новым условиям</p></li>
+
+                            
+                            <li><p>Способность глубоко погрузиться в анализ и проектирование</p></li>
+                        </p>
+                    </ul>
+                    <p>Я готов принять новые вызовы и применить свои знания и опыт для достижения поставленных целей.
+                    </p>
+                    <button class="btn btn-primary rounded mt-3">Скачать резюме</button>
+                </div>
+            </div>
         </div>
     </section>
 
-    <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
-        viewBox="0 0 85 100" preserveAspectRatio="none">
-        <path d="M-5 100 Q 0 20 5 100 Z
-            M0 100 Q 5 0 10 100
-            M5 100 Q 10 30 15 100
-            M10 100 Q 15 10 20 100
-            M15 100 Q 20 30 25 100
-            M20 100 Q 25 -10 30 100
-            M25 100 Q 30 10 35 100
-            M30 100 Q 35 30 40 100
-            M35 100 Q 40 10 45 100
-            M40 100 Q 45 50 50 100
-            M45 100 Q 50 20 55 100
-            M50 100 Q 55 40 60 100
-            M55 100 Q 60 60 65 100
-            M60 100 Q 65 50 70 100
-            M65 100 Q 70 20 75 100
-            M70 100 Q 75 45 80 100
-            M75 100 Q 80 30 85 100
-            M80 100 Q 85 20 90 100
-            M85 100 Q 90 50 95 100
-            M90 100 Q 95 25 100 100
-            M95 100 Q 100 15 105 100 Z">
-        </path>
-    </svg>
+    <!-- Service section -->
+    <section id="service" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Специальности</h6>
+            <h6 class="section-title mb-4">Что я умею</h6>
+            <p class="mb-5 pb-4">Мой приобретенный опыт и научные навыки позволяют раскрыться с разных сторон, как в
+                техническом плане,
+                так и в управлении<br> Также я подкован в творческой области и обладаю хорошим вкусом</p>
 
-    <div id="about" class="section wb">
-        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">
-                        <h2 class="lng-artem">About Artem </h2>
-                        <p class="footer-links ml-1 mt-2">
-                            <a href="https://t.me/a_rtem_m" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-                            <a href="https://github.com/ArtemMusic" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="https://vk.com/artem_mk" target="_blank"><i class="fa-brands fa-vk"></i></a>
-                            <a href="https://spb.hh.ru/resume/11b147d6ff0b9552320039ed1f505a4e74786e">hh</a>
-                        </p>
-                        <p class="lng-artemtext">Developed websites using modern technologies. Improved the teamwork
-                            process in the team
-                            by introducing a modern framework and design/development patterns.</p>
-                        <p class="lng-artemtext2"> — Implemented successful development ideas: apply patterns, software
-                            engineering, Git Hub to merge different parts of the application.</p>
-                        <p class="lng-artemtext3">- Applied and implemented ci/cd tools to optimize the deployment of a
-                            high-load system.</p>
-                        <p class="lng-artemtext4">— Developed a smart home system with a telegram bot.</p>
-                        <p class="lng-artemtext5">- Wrote my own database in С++.</p>
-                        <p class="lng-artemtext6">- Analyzed and optimized more than 20,000 lines of code.</p>
-                        
-                    </div><!-- end messagebox -->
-                </div><!-- end col -->
-
-                <div class="col-md-6">
-                    <div class="right-box-pro wow fadeIn">
-                        <img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
-                    </div><!-- end media -->
-                    <br>
-                    <br>
-                    <div style="margin: 0 auto; text-align: center;"><a href="uploads/resume.pdf"  class="sim-btn btn-hover-new lng-cv" download
-                            target="_blank"><span>Download CV</span></a>   </div> 
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-
-    <div id="blog" class="section lb" style="padding-bottom: 0 !important;">
-        <div class="container">
-            <div class="section-title text-left px-3">
-                <h3 class="lng-mainskils">Skils</h3>
-                <p class="lng-mainskilstext">
-                    My main direction is BackEnd. But range of skills is much wider.
-                </p>
-            </div><!-- end title -->
-            <div class="row px-3">
-                <div class="col-md-6">
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">PHP/Laravel</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">Sql/MySql</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">Js/VueJs</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">C/C++</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">HTML + CSS</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">Web Design</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="fa-solid fa-crown"></i>
+                            <h5>Управление</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">Linux</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width:60%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">Docker</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width:45%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">Bash/Shell</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width:50%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">Python</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width:45%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">CI/CD</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="progress-wrapper wow fadeInUp">
-                        <span class="caption">IoT</span>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="fas fa-desktop"></i>
+                            <h5>Программирование</h5>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div id="services" class="section lb">
-                <div class="container">
-                    <div class="section-title text-left">
-                        <h3 class="lng-mainserv">Services</h3>
-                        <p class="lng-mainservtext">I can perform all these tasks at the same equally worthy level.</p>
-                    </div><!-- end title -->
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="services-inner-box">
-                                <div class="ser-icon">
-                                    <i class="flaticon-seo"></i>
-                                </div>
-                                <h2 class="lng-servwd">Web Development</h2>
-                                <p class="lng-servwdtext">Development takes place in the BackEnd: PHP, Laravel, C++ and
-                                    FrontEnd: VuesJs,
-                                    HTML5, CSS3. This set is the most popular and allows you to quickly and efficiently
-                                    build complex and large-scale systems. Also, in addition to the above tools, C++
-                                    will be used to optimize.</p>
-                            </div>
-                        </div><!-- end col -->
-                        <div class="col-md-4">
-                            <div class="services-inner-box">
-                                <div class="ser-icon">
-                                    <i class="flaticon-development"></i>
-                                </div>
-                                <h2 class="lng-servse">Software engineering</h2>
-                                <p class="lng-servsetext">Software engineering is a set of technologies that allows you
-                                    to build the most
-                                    reliable and efficient systems, monitor the life cycle of a product from its idea to
-                                    implementation. Mathematical methods for building systems will allow you to evaluate
-                                    the work done.</p>
-                            </div>
-                        </div><!-- end col -->
-                        <div class="col-md-4">
-                            <div class="services-inner-box">
-                                <div class="ser-icon">
-                                    <i class="flaticon-process"></i>
-                                </div>
-                                <h2 class="lng-servcicd">CI/CD</h2>
-                                <p class="lng-servcicdtext">It is a combination of continuous integration and continuous
-                                    software deployment
-                                    during development with docker. CI/CD integrates the development, testing and
-                                    deployment of an application. This allows to make any changes without stopping work.
-                                </p>
-                            </div>
-                        </div><!-- end col -->
-                        <div class="col-md-4">
-                            <div class="services-inner-box">
-                                <div class="ser-icon">
-                                    <i class="flaticon-idea"></i>
-                                </div>
-                                <h2 class="lng-servidea">Web Idea</h2>
-                                <p class="lng-servideatext">Creativity and attention to detail is the key to success in
-                                    the development of modern
-                                    systems. When building architecture, I try to implement new and interesting
-                                    solutions in order to achieve the best result both FrontEnd and BackEnd.</p>
-                            </div>
-                        </div><!-- end col -->
-                        <div class="col-md-4">
-                            <div class="services-inner-box">
-                                <div class="ser-icon">
-                                    <i class="flaticon-discuss-issue"></i>
-                                </div>
-                                <h2 class="lng-servsp">Support</h2>
-                                <p class="lng-servsptext">
-                                    In work, it is very important and necessary to be able to maintain contact with the
-                                    team, customer and manager, find a common language and be friendly. I am a very
-                                    sociable person who can help solve the problem and come to the best result, even if
-                                    it is very difficult.</p>
-                            </div>
-                        </div><!-- end col -->
-                        <div class="col-md-4">
-                            <div class="services-inner-box">
-                                <div class="ser-icon">
-                                    <i class="flaticon-idea-1"></i>
-                                </div>
-                                <h2 class="lng-serviot">IoT</h2>
-                                <p class="lng-serviottext">In addition to developing websites, I also took part in the
-                                    design of smart home
-                                    systems, artificial intelligence, and telegram bots. To do this, I assembled my own
-                                    team. It gave me an incredible amount of new knowledge, teamwork experience and
-                                    technical skills.</p>
-                            </div>
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </div><!-- end section -->
-            <div id="portfolio" class="section lb" style="padding-top: 0 !important;">
-                <div class="container">
-                    <div class="section-title text-left">
-                        <h3 class="lng-port">Portfolio</h3>
-                        <p class="lng-porttext">Check out my work and give feedback. You can also offer your ideas for
-                            their development.</p>
-                    </div><!-- end title -->
-
-                    <div class="gallery-menu row">
-                        <div class="col-md-12">
-                            <div class="button-group filter-button-group text-left">
-                                <button class="active" data-filter="*">All</button>
-                                <button data-filter=".gal_a">Web</button>
-                                <button data-filter=".gal_b">IoT</button>
-                                <button data-filter=".gal_c">Desktop</button>
-                                <button data-filter=".gal_e">Docs</button>
-                            </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="fa-solid fa-people-group"></i>
+                            <h5>Работа в команде</h5>
                         </div>
                     </div>
-                    
-                    <div class="gallery-list row">
-
-                        <div class="col-md-4 col-sm-6 gallery-grid gal_a">
-                            <div class="gallery-single fix">
-                                <img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
-                                <div class="img-overlay">
-                                    <a href="./blog.html" target="_blank" class="hoverbutton global-radius"><i
-                                            class="fa fa-picture-o"></i>
-                                        <p>Blog</p>
-                                    </a>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="fas fa-tasks"></i>
+                            <h5>Планирование</h5>
                         </div>
-
-                        <div class="col-md-4 col-sm-6 gallery-grid gal_a">
-                            <div class="gallery-single fix">
-                                <img src="uploads/gallery_img-01.jpg" target="_blank" class="img-fluid" alt="Image">
-                                <div class="img-overlay">
-                                    <a target="_blank" href="./smoke.html" class="hoverbutton global-radius"><i
-                                            class="fa fa-picture-o"></i>
-                                        <p>Shop</p>
-                                    </a>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <h5>Анализ</h5>
                         </div>
-
-                        <div class="col-md-4 col-sm-6 gallery-grid gal_a">
-                            <div class="gallery-single fix">
-                                <img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
-                                <div class="img-overlay">
-                                    <a href="./saint.html" target="_blank" class="hoverbutton global-radius"><i
-                                            class="fa fa-picture-o"></i>
-                                        <p>Post</p>
-                                    </a>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="fa-solid fa-file-invoice"></i>
+                            <h5>Документирование</h5>
                         </div>
-
-                        <div class="col-md-4 col-sm-6 gallery-grid gal_e">
-                            <div class="gallery-single fix">
-                                <img src="uploads/gallery_img-06.jpg" target="_blank" class="img-fluid" alt="Image">
-                                <div class="img-overlay">
-                                    <a target="_blank" href="./docs.html" class="hoverbutton global-radius"><i
-                                            class="fa fa-picture-o"></i>
-                                        <p>Docs</p>
-                                    </a>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <h5>Проектирование</h5>
                         </div>
-
-                        <div class="col-md-4 col-sm-6 gallery-grid gal_c">
-                            <div class="gallery-single fix">
-                                <img src="uploads/gallery_img-03.jpg" target="_blank" class="img-fluid" alt="Image">
-                                <div class="img-overlay">
-                                    <a target="_blank" href="./db.html" class="hoverbutton global-radius"><i
-                                            class="fa fa-picture-o"></i>
-                                        <p>DB</p>
-                                    </a>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            <h5>Маркетинг</h5>
                         </div>
-
-                        <div class="col-md-4 col-sm-6 gallery-grid gal_b">
-                            <div class="gallery-single fix">
-                                <img src="uploads/gallery_img-02.jpg" target="_blank" class="img-fluid" alt="Image">
-                                <div class="img-overlay">
-                                    <a target="_blank" href="./iot.html" class="hoverbutton global-radius"><i
-                                            class="fa fa-picture-o"></i>
-                                        <p>IoT</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                       
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- End of Sectoin -->
+
+    <!-- Skills section -->
+    <section class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Навыки</h6>
+            <h6 class="section-title mb-4">Почему именно я?</h6>
+            <p class="mb-5 pb-4">Мои основыне навыки заключаются в программной инженерии, управлении и разработке <br>
+                Но на этом они не заканчиваются</p>
 
 
-        <div class="copyrights">
-            <div class="container">
-                <div class="footer-distributed">
-                    <div class="footer-left">
-                        <p class="footer-links">
-                            <a href="https://t.me/a_rtem_m" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-                            <a href="https://github.com/ArtemMusic" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a>
-                            <a href="https://vk.com/artem_mk" target="_blank"><i class="fa-brands fa-vk"></i></a>
-                            <a href="https://spb.hh.ru/resume/11b147d6ff0b9552320039ed1f505a4e74786e"
-                                target="_blank">hh</a>
-                            <a href=""> muzychukartem.music@gmail.com</a>
-                        </p>
-                        <!-- <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Dominic</a> Design By : 
-					<a href="https://html.design/">html design</a></p> -->
+            <h5 class="row text-left mb-4">Управление</h5>
+            <div class="row text-left">
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Гибкие agile методологии(scrum,kanban,xp)</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
                     </div>
                 </div>
-            </div><!-- end container -->
-        </div><!-- end copyrights -->
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Тяжеловесныe heavyweight методологии</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Защитные процессы и ликвидация потерь</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Сбор и анализ требований</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Проектирование и прототипирование</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Макетирование</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Конструирование и тестирование</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Внедрение и сопровождение</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Адаптация к условиям</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Управление персоналом</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                
+            
+            </div>
+            <br>
+            <h5 class="row text-left mb-4">Разработка</h5>
+            <div class="row text-left">
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Web технологии</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Понимание принципов постоения архитектуры</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Использование паттернов</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Языки программирования и фреймворки(PHP, JS, Laravel, Vue и тд)</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Сетевая архитектура и сети связи</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Базы данных и управление</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">CRM системы</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
 
+                <div class="col-sm-6">
+                    <h6 class="mb-3">IoT и автоматизированные системы</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Администрирование операционных систем</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Математическое моделирование</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h5 class="row text-left mb-4">Прочее</h5>
+            <div class="row text-left">
 
-    </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Web дизайн</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Пакеты microsoft office</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Яндекс метрика и другие метрики</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Скоростной слепой набор текста</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Английский язык</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Чтение книг</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Skills sections -->
 
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+    <!-- Portfolio section -->
+    <section id="portfolio" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Портфолио</h6>
+            <h6 class="section-title mb-4">Взгляните на мои успешно завершённые проекты</h6>
+            <p class="mb-5 pb-4">Каждый свой проект я стараюсь доводить до конца и прогнозировать возможные трудности,
+                параллельно решая уже возникшие.<br>Я благодарен своим командам за помощь и активное участие</p>
 
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <!-- Camera Slider -->
-    <script src="js/jquery.mobile.customized.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/parallaxie.js"></script>
-    <script src="js/headline.js"></script>
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.vide.js"></script>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-1.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-3.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-5.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/folio-6.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Testmonial Section -->
+    <section id="testmonial" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Характеристики</h6>
+            <h6 class="section-title mb-4">Что обо мне думают работодатели и коллеги</h6>
+            <p class="mb-5 pb-4">В работе важно поддерживать хорошие отношения со всей командой, необходимо понимать и
+                слушать других людей<br>Я работаю с разными людьми, и нахожу нужный подход к каждому</p>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    
+                    
+                    <div class="carousel-item active">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/ivan.jpg" alt="">
+                                <p>"Артём обладает уникальной особенностью чувствовать людей и адаптироваться к любым стрессовым ситуациям. Показал себя как ответственный руководитель, который не боится принимать смелые решения."</p>
+                                <h1 class="title">Шойтов Иван</h1>
+                                <h1 class="subtitle">Основатель компании "HomeParadise". Внедрение система "умных" домов</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/f5.png" alt="">
+                                <p>"В процессе работы зарекомендовал себе как квалифициорванный специалист и дисциплинированный, ответственный сотрудник. Способный качественно выполнять поставленные задачи в сроки, самостоятельно принимать решения в трудных ситуациях"</p>
+                                <h1 class="title">Представитель компании "Команда F5"</h1>
+                                <h1 class="subtitle">Официальный партнер crm системы AmoCrm. Интегратор</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/ALINA2.jpg" alt="">
+                                <p>"Было приятно работать вместе, в любой команде обязан быть вдохновитель, который будет помогать тебе на всех этапах и решать возникшие проблемы. Артём не только был одним из разработчиков, но и тем самым вдохновителем."</p>
+                                <h1 class="title">Лондарь Алина</h1>
+                                <h1 class="subtitle">Веб-дизайнер и front-end</h1>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of testmonial section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="position-relative section">
+        <div class="container text-center">
+            <h6 class="subtitle">Контакты</h6>
+            <h6 class="section-title mb-4">Свяжитесь со мной</h6>
+            <h6 class="subtitle">На данный момент отключено</h6>
+            <div class="contact text-left">
+                <div class="form">
+                    <h6 class="section-title mb-4">Напишите своё сообщение</h6>
+                    <form>
+                        <div class="form-group">
+                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control"
+                                placeholder="Сообщение:"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block rounded w-lg">Отправить</button>
+                    </form>
+                </div>
+                <div class="contact-infos">
+                    <div class="item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="">
+                            <h5>Адресс</h5>
+                            <p>Россия, Санкт-Петербург</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h5>Номер телефона</h5>
+                            <p>+79621216090</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="mb-0">
+                            <h5>Почта</h5>
+                            <p>muzychukartem.music@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map">
+            <iframe id="map_40835176" frameborder="0" width="100%" height="600px" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe><script type="text/javascript">(function(e,t){var r=document.getElementById(e);r.contentWindow.document.open(),r.contentWindow.document.write(atob(t)),r.contentWindow.document.close()})("map_40835176", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzAyODFmMiIsInRpdGxlIjoiIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzMwLjM3MzA1Nyw1OS44Mjk0MDZdfSwiaWQiOjE3MTJ9LHsidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzQ3NDc0NyIsInRpdGxlIjoiIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzMwLjMxNTgzMyw1OS45Mzg5NTNdfSwiaWQiOjE4MDJ9XSwibWFwUG9zaXRpb24iOnsibGF0Ijo1OS45NDc5NjE4MjYyMjY5MywibG9uIjozMC4zMTM1MTA4OTQ3NzUzOTQsInpvb20iOjEzfSwiaXNXaGVlbFpvb21FbmFibGVkIjpmYWxzZX0nKTwvc2NyaXB0PjxzY3JpcHQgYXN5bmM9IiIgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0YWcvanM/aWQ9VUEtMTU4ODY2MTY4LTEiPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4oZnVuY3Rpb24oZSl7ZnVuY3Rpb24gdCgpe2RhdGFMYXllci5wdXNoKGFyZ3VtZW50cyl9d2luZG93LmRhdGFMYXllcj13aW5kb3cuZGF0YUxheWVyfHxbXSx0KCJqcyIsbmV3IERhdGUpLHQoImNvbmZpZyIsZSksd2luZG93Lmd0YWc9dH0pKCdVQS0xNTg4NjYxNjgtMScpPC9zY3JpcHQ+PC9ib2R5Pg==")</script>
+
+        </div>
+    </section>
+    <!-- End of Contact Section -->
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <p>Артём Музычук</p>
+                </div>
+                <div class="socials mt-4">
+                    <a class="social-item" href="https://t.me/a_rtem_m"><i class="fa-brands fa-telegram"></i></a>
+                    <a class="social-item" href="https://github.com/ArtemMusic"><i class="fa-brands fa-github"></i></a>
+                    <a class="social-item" href="https://hh.ru/resume/11b147d6ff0b9552320039ed1f505a4e74786e"><i class="fa-solid fa-h"></i></a>
+                    <a class="social-item" href="mailto:muzychukartem.music@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
 
 </body>
 
